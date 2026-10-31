@@ -1,0 +1,12 @@
+name: runner-label-test
+on:
+  workflow_dispatch:
+jobs:
+  old-2004:
+    runs-on: ubuntu-20.04
+    steps:
+      - run: echo "ran on 20.04"
+  modern-2404:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: echo "ran on 24.04"
